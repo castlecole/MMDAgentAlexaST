@@ -1,3 +1,4 @@
+
 # MMDAgent Tutorial
 
 This application was written in Japanese and the following is some useful English information about how to use it.
@@ -7,19 +8,19 @@ This application was written in Japanese and the following is some useful Englis
 2. System Requirements
 3. How to get MMDAgent
 4. MMDAgent Avatar Structure
------ToDo
+----- ToDo
 5. Creating your Agent/Avatar: .mdf File
 6. Creating the Stage: .fst File
-----ToDo: Lighting-Camera?
+---- ToDo: Lighting-Camera?
 7. Creating Movement & Expressions: .vmd File
-----ToDo: Rotation
+---- ToDo: Rotation
 8. Creating Voice Banks: .ojt File
-----ToDo: Voice Regcognition
-----ToDo: Speech-Synthesis
-----ToDo: Music-Images MP3, Sync and Dance
+---- ToDo: Voice Regcognition
+---- ToDo: Speech-Synthesis
+---- ToDo: Music-Images MP3, Sync and Dance
 9. Adding your Models
-----ToDo: Plug-ins
-----ToDo: Others/Misc
+---- ToDo: Plug-ins
+---- ToDo: Others/Misc
 10. Adding Props/Acessories
 11. How you can help
 12. Useful Tips & Links
@@ -253,21 +254,32 @@ This method uses an action in the .fst file to create one wall and one floor. Th
 First see 'Adding Props/Acessories' to use .x files.
 To use a proper stage just summon it using an action in the .fst file or manually.
 
+---- ToDo: Lighting-Camera?
+
 
 ## 7. Creating Movement & Expressions: .vmd Files
 Movement and Expressions is created with MMD. To make sure the movement will work for real, use the same model you plan to use to create your motions.
 
 Movement/Expression files are .vmd and are created & saved using MMD
 
+---- ToDo: Rotation
+
 
 ## 8. Creating Voice Banks: .ojt File
 If you want to actually make your own voice bank, I'm afraid I don't know how, The program used for voice synthsizing is jTalk, So maybe you might be able to find some tutorials online or something? However you are able to manipulate the voice using the .ojt file. If you manage to create a nice sounding .ojt file post here to share(If you want to).
+
+---- ToDo: Voice Regcognition
+---- ToDo: Speech-Synthesis
+---- ToDo: Music-Images MP3, Sync and Dance
 
 
 ## 9. Adding your Models
 Your going to want to keep all your models in a folder to keep it organized, Also, Don't forget that certain models may need extra textures such as the miku.pmd from MMD requires a eye.bmp in the same folder. Also don't forget if the texture names are in Japanese and you don't have the Japanese language pack installed you will have problems, Scroll up to '4. System Requirements' to see what to do to fix it.
 
 I won't be listing how to create models as that does not apply to MMDAgent and I have still not found an editor in English that works! I am currently relying on the greater worldly experience and skills of colleagues on the Deviant Art forum.
+
+---- ToDo: Plug-ins
+---- ToDo: Others/Misc
 
 
 ## 10. Adding Props/Acessories
