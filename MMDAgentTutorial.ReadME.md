@@ -1,6 +1,6 @@
 # MMDAgent Tutorial
 
-This application was written in Japanese and the following is some useful English information about how to use it.
+The MMDAgent application was written in Japanese and hence the following are some useful English information about how to use it.
 
 ## Contents
 1. Introduction
@@ -59,23 +59,26 @@ Recommendations (Mostly assumed...):
 - EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
 
 If You do not have japanese language pack enabled you will still be able to use MMDA however you will come across many problems such as:
-- Retarted Skin error: To fix this, use a computer with the Japanese Language Pack installed... I think (will test on a computer with JPN Language pack installed).
+- Retarted Skin error:
+
+      To fix this, use a computer with the Japanese Language Pack installed...
+      I think (will test on a computer with JPN Language pack installed).
+
 - An error saying it was unable to load textures for a model. (Should be a dark see-through black-ish box with Red Text.): To fix this do either of:
 
-A. Use a computer with the Japanese Language Pack installed.
-
-Or
-
-B. Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
+      A. Use a computer with the Japanese Language Pack installed.
+      Or
+      B. Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
 
  
 ## 3. How to get MMDAgent
-This guide is based on the assumption you have already downloaded the latest release of MMDAgent.(It being MMDAgent RC.)
+This guide is based on the assumption that you have already downloaded the latest release of MMDAgent. (It being MMDAgent RC.)
 The latest version can be found at their homepage at:
-     http://www.mmdagent.jp/
 
-Under "MMDAgent version" column, download the link labeled "Binary Package (for 32-bit Windows)".
-(Although it says 32-Bit Windows it is completely compatable with 64-bit...)
+    http://www.mmdagent.jp/
+
+    Under "MMDAgent version" column, download the link labeled "Binary Package (for 32-bit Windows)".
+    (Although it says 32-Bit Windows, it is completely compatable with 64-bit...)
 
 
 ## 4. MMDAgent Avatar Structure
@@ -89,7 +92,7 @@ Lets get started in making your agent. Be prepared (Go get a jug of coffee...), 
 
 So, first you are going to want to open your favourite word editing program. This can be Notepad, Wordpad, MS Word, EditPad Lite or Notepad++. As long as you can type & save "plain text" without any formatting, then all is good.
 
-The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
+The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values are written underneath each setting, as well as a description for each value. Replace ## with any of the possible values:
 
 
 ### use_cartoon_rendering=##
@@ -99,6 +102,7 @@ The .mdf basically consists of all the settings, one line for each setting. All 
     - False - No border.
 
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border.
+
 Size of border (If enabled) can also be set via the carton_edge_width setting below.
 
 
@@ -114,7 +118,9 @@ I have not noticed a difference between T or F, Tell me if you do, or what an id
 ### cartoon_edge_width=##
 
     e.g. cartoon_edge_width=0.35
-    - Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border(if 'use_cartoon_rendering' is set to true)
+    - Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border
+    
+    NB: Only works if 'use_cartoon_rendering' is set to true
 
 Use_cartoon_rendering' must me set to true otherwise this setting is useless
 
@@ -124,7 +130,7 @@ Use_cartoon_rendering' must me set to true otherwise this setting is useless
     e.g. cartoon_edge_step=1.2
     - Any number
 
-If 'use_cartoon_rendering' is set to true.
+NB: Only works if 'use_cartoon_rendering' is set to true.
 Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
 
 
@@ -137,7 +143,7 @@ Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+
     #3# = Blue
     #4# = Unknown?
 
-Colour when a model is selected(Clicked on)
+Colour when a model is selected (Clicked on)
 
 
 ### rendering_rotation=0.0,0.0,0.0
@@ -155,166 +161,229 @@ Sets the angle for the camera. I think its X,Y,Z...Haven't tested yet.
 Sets the location of the camera: X-Higher = Move Left, Y-Higher = Move Down, Z-Higher = Move Forward
 
 
-rendering_scale=value
-e.g. rendering_scale=1.2
- - Any number
+### rendering_scale=value
+
+    e.g. rendering_scale=1.2
+    - Any number
+
 Scale for models/accessories/backgrounds. When an object is created the dimensions are multiplied by the value.
-NB: Do not get this confused with zoom. 
+
+NB: Do not get this confused with Zoom. 
 
 
-stage_size=25.0,25.0,40.0
- - Any number
-Used to set the dimensions of the room...Hard to explain
+### stage_size=25.0,25.0,40.0
+
+    - Any number
+
+Used to set the dimensions of the room X, Y, Z. I think, but not sure...
 
 
-show_fps=value
+### show_fps=value
 e.g. show_fps=false
  - true
  - false
 Decides whether FPS is shown or not
 
 
-fps_position=-2.5,22.0,3.0
- - Any Number
-Sets locations of counter. Think its X,Y,Z didn't spend time on it
+### fps_position=-2.5,22.0,3.0
+
+    - Any Number
+
+Sets locations of counter. I think its X,Y,Z didn't spend time on it
 
 
-window_size=value1,value2
-e.g. window_size=600,600
- - value1 - sets the width of the window
- - value2 - sets the height of the window
-Sets window size.
+### window_size=value1,value2
+
+    e.g. window_size=600,600
+    - value1 - sets the width of the window
+    - value2 - sets the height of the window
+
+Sets the window size.
 
 
-top_most=value
-e.g. top_most=true
- - true - Always on top, even when switching to another window
- - false - Will be covered if changed to another window/application.
+### top_most=value
+
+    e.g. top_most=true
+    - true - Always on top, even when switching to another window
+    - false - Will be covered if changed to another window/application.
+
 Sets whether MMDAgent will always be on top.
 
-full_screen=value
-e.g. full_screen=false
- - true
- - false
+
+### full_screen=value
+
+    e.g. full_screen=false
+    - true
+    - false
+
 Full screen or not.
 
 
-log_size=value1,value2
-e.g log_size=80,30
- - Any number, (X-Value,Y-Value)
-How big the console log thingy is
-Must be toggled to visable via D Key
+### log_size=value1,value2
+
+    e.g log_size=80,30
+    - Any number, (X-Value,Y-Value)
+
+How big the console log thingy is.
+
+Must be toggled to visable via the 'D' Key.
 
 
-log_position=-17.5,3.0,-20.0
- - Any Number
+### log_position=-17.5,3.0,-20.0
+
+    - Any Number
+
 Location of the log, X,Y,Z I think...
-Must be toggled to visable via D Key
+
+Must be toggled to visable via the 'D' Key.
 
 
-log_scale=1.0
- - any number
+### log_scale=1.0
+
+    - any number
+
 Size of log Multiplied by this value.
-Must be toggled to visable via D Key
+
+Must be toggled to visable via the 'D' Key.
 
 
-light_direction=0.5,1.0,0.5,0.0
- - Any Numbers
-Something to do with light direction i presume... can't really be bothered to test it, Will test it later or someone can email me
-This can also be changed manual by Shift+Ctrl+ Click&Drag.
+### light_direction=0.5,1.0,0.5,0.0
+ 
+    - Any Numbers
+
+The direction that stage lighting is coming from to illuminate the Agent/Avatar.
+
+This can also be changed manually by Shift+Ctrl+LeftClick then Dragging mouse around the screen.
 
 
-light_intensity=0.6
- - Any Number, Highest Value=1,Lowest Value=0
-How bright the light is.
+### light_intensity=0.6
+
+    - Any Number, Highest Value=1,Lowest Value=0
+
+How bright the stage lighting/sun is.
 
 
-light_color=1.0,1.0,1.0
- - Any number Between 0(lowest/None) to 1.0(Highest/full)
-Colour of the light/sun, Format is R,G,B
+### light_color=1.0,1.0,1.0
+
+    - Any number Between 0(lowest/None) to 1.0(Highest/full)
+
+Colour of the stage lighting/sun, Format is R,G,B
 
 
-campus_color=0.0,0.0,0.2
- - Any number Between 0(lowest/None) to 1.0(Highest/full)
-Colour of the Background/Void, Format is R,G,B
+### campus_color=0.0,0.0,0.2
+
+    - Any number Between 0(lowest/None) to 1.0(Highest/full)
+
+Colour of the Background/Void, Format is R,G,B.
+
+Pure White is Surreal and pure Black gives you issues with Agent visibility, so play with colours until they are good for your Agent.
 
 
-max_multi_sampling=4
- - Unknown, Number perhaps?
+### max_multi_sampling=4
+
+    - Unknown, Number perhaps?
+
 I have no idea, Email me if you do.
 
 
-max_multi_sampling_color=4
- - Unknown, Number perhaps?
+### max_multi_sampling_color=4
+
+    - Unknown, Number perhaps?
+
 I have no idea, Email me if you do.
 
 
-motion_adjust_frame=0
- - Unknown, Number perhaps?
+### motion_adjust_frame=0
+
+    - Unknown, Number perhaps?
+
 Have no idea, Email me if you do.
 
 
-bullet_fps=120
- - Any Number, Higher Number = More fluid movement of hair/clothes
-Sets the fps for anything affected by gravity.
+### bullet_fps=120
+
+    - Any Number, Higher Number = More fluid movement of hair/clothes
+
+Sets the fps (frames per second) for anything affected by gravity.
 
 
-rotate_step=0.08
- - Any Number, Higher = Faster, Lower = Slower
-Controls the speed at which you rotate the camera when using arrow keys.
+### rotate_step=0.08
+
+    - Any Number, Higher = Faster, Lower = Slower
+
+Controls the speed at which you rotate the camera when using Arrow keys.
 
 
-translate_step=0.5
- - Any Number, Higher = Faster, Lower = Slower
+### translate_step=0.5
+
+    - Any Number, Higher = Faster, Lower = Slower
+
 Controls the speed at which you move the camera when using - Shift + Arrow Keys
 
 
-scale_step=1.05
- - Any Number, Higher = Faster, Lower = Slower
-Controls the speed at which Zoom in and out when using + and - Keys.
+### scale_step=1.05
+
+    - Any Number, Higher = Faster, Lower = Slower
+
+Controls the speed at which Zoom-In and Out, when using the '+' and '-' Keys.
 
 
-use_shadow_mapping=false
- - True
- - False
+### use_shadow_mapping=false
+
+    - True
+    - False
+
 Sets whether shadows are rendered ontop of models.
-Can be toggled with the 'X' key
+
+Can be toggled with the 'X' key.
 
 
-shadow_mapping_texture_size=1024
- - Any Number, Higher = Darker, Lower = Lighter
-Controls how dark shadows are.
+### shadow_mapping_texture_size=1024
+
+    - Any Number, Higher = Darker, Lower = Lighter
+
+Controls how dark the shadows are.
 
 
-shadow_mapping_self_density=1.0
- - Number?
+### shadow_mapping_self_density=1.0
+
+    - Number
+
 I Have no idea what this does. Email me if you do.
 
 
-shadow_mapping_floor_density=0.5
- - Number?
+### shadow_mapping_floor_density=0.5
+
+    - Number?
+
 I Have no idea what this does. Email me if you do.
 
 
-shadow_mapping_light_first=true
- - true?
- - false?
+### shadow_mapping_light_first=true
+
+    - true?
+    - false?
+
 I Have no idea what this does. Email me if you do.
 
 
-display_comment_frame=0.0
- - Number?
+### display_comment_frame=0.0
+
+    - Number?
+
 I Have no idea what this does. Email me if you do.
 
 
 
 ## 6. Creating the Stage: .fst File
 The stage can be created 2 different ways:
-.fst Method
+
+### .fst Method
 This method uses an action in the .fst file to create one wall and one floor. The wall and floor consist of a .xpmd/bmp/png/tga.
 
-.pmd/x Method
+### .pmd/x Method
 First see 'Adding Props/Acessories' to use .x files.
+
 To use a proper stage just summon it using an action in the .fst file or manually.
 
     {++ ToDo ++}: Lighting-Camera
@@ -356,34 +425,35 @@ Please feel free to send me any info i missed, so i can add to this guide, espec
 ## 12. Useful Tips & Links
 These are the real experts in MMDAgent:
 
-### VPVP Wiki
+#### VPVP Wiki
 The place for MMD resources, Although its in Japanese Google Translate does a good enough job and using it you should be able to navigate around the site.
 
-### MMDAgent
+#### MMDAgent
 The homepage to this wonderful avatar program. 
 
-### VocaloidOtaku
+#### VocaloidOtaku
 A good forum to talk about Vocaloids and what not, Also has section for MikuMikuDance.
 
-### Youtube
+#### Youtube
 Youtube, if you don't know what it is...Now you do, YouTube, A Big giant Video hosting site with like what, a billion videos? You should be able to find tutorials or MMD resources on youtube. You can also find Mole-Chan on Youtube.
 
-### Nico Nico Douga
+#### Nico Nico Douga
 Nico Nico Douga, Pretty much the japanese version of youtube. Filled with many videos of anime/Vocaloid and other Japanese culture. Your going to need an account to watch videos(registration is free) as well as a grasp on kanji if you going to wanna use the search.
 
-### EditPadPro
+#### EditPadPro
 A extremely useful app for people who don't have the Japanese language pack installed. EditPadPro can open files which have messed up chars(All those fs) and convert it into proper Japanese.
 To do so after opening the files, Menu->Convert->Text encoding, Set it to 'Interpret the original Data' and set the new encoding to 'Windows 932: Japanese SHIFT-JIS'
 
-### Your Name in Japanese
+#### Know your Name in Japanese
 Useful for when you want your Agent to say your name.
 
-### Katakana to English Converter
+#### Katakana to English Converter
 Another useful site for turning english into katakana for whatever reason you'd want, Best to do word by word.
 
 
 ## 13. Credits
 Thanks for reading, hope some parts are useful to you.
+
 Special thanks to:
  - Midget & Mole-Chan : Who started the first version of this document.
  - MMDAgents Creators : For creating MMDAgent.
