@@ -8,23 +8,23 @@ This application was written in Japanese and the following is some useful Englis
 2. System Requirements
 3. How to get MMDAgent
 4. MMDAgent Avatar Structure
-    [++ ToDo ++]
+    {++ ToDo ++}
 5. Creating your Agent/Avatar: .mdf File
 6. Creating the Stage: .fst File
-    [++ ToDo ++]: Lighting-Camera?
+    {++ ToDo ++}: Lighting-Camera?
 7. Creating Movement & Expressions: .vmd File
-    [++ ToDo ++]: Rotation
+    {++ ToDo ++}: Rotation
 8. Creating Voice Banks: .ojt File
-    [++ ToDo ++]: Voice Regcognition
-    [++ ToDo ++]: Speech-Synthesis
-    [++ ToDo ++]: Music-Images MP3, Sync and Dance
+    {++ ToDo ++}: Voice Regcognition
+    {++ ToDo ++}: Speech-Synthesis
+    {++ ToDo ++}: Music-Images MP3, Sync and Dance
 9. Adding your Models
-    [++ ToDo ++]: Plug-ins
-    [++ ToDo ++]: Others/Misc
+    {++ ToDo ++}: Plug-ins
+    {++ ToDo ++}: Others/Misc
 10. Adding Props/Acessories
 11. How you can help
 12. Useful Tips & Links
-13. Credits & End
+13. Credits
 
 
 ## 1. Introduction
@@ -36,23 +36,22 @@ If it seems incomplete, the chances are it is, as I am still finding more inform
 ## 2. System Requirements
 Well theres not really any listed So most of this is assumed...
 
-Recommended(Assumed):
+Recommendations (Mostly assumed...):
 - Processor : 2.00GHz
 - Ram : 2GB
 - Direct X : Latest recommended
-- Japanese Language Pack : Optional, But HIGHLY recommended!
+- Japanese Language Pack (JLP): Optional, But HIGHLY recommended!
 - MikuMikuDance : Optional, Needed if you want to make Motions
 - Notepad : Optional, To create the .ojt,.mdf,.fst Files.
 - EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
 
 If You do not have japanese language pack enabled you will still be able to use MMDA however you will come across many problems such as:
+- Retarted Skin error:
+ - To fix this, use a computer with the Japanese Language Pack installed... I think (will test on a computer with JPN Language pack installed).
+- An error saying it was unable to load textures for a model. (Should be a dark see-through black-ish box with Red Text.)
+ - To fix this do either of:
 
-- Retarted Skin, Example http://img232.images...s/i/rsfdgh.png/
-To fix - Use a comp with Japanese Language Pack installed... I think(will test on a computer with JPN Language pack installed).
-An error saying it was unable to load textures for a model.(Should be a dark see-through black-ish box with Red Text.)
-To fix do either of:
-
-  A) Use a compiler with Japanese Language Pack installed.
+  A) Use a computer with the Japanese Language Pack installed.
 Or
   B) Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
 
@@ -68,7 +67,7 @@ Under "MMDAgent version" column, download the link labeled "Binary Package (for 
 
 ## 4. MMDAgent Avatar Structure
 
-[++ ToDo ++]
+    {++ ToDo ++}
 
 
 
@@ -79,11 +78,13 @@ So, first you are going to want to open your favourite word editing program. Thi
 
 The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
 
+
 use_cartoon_rendering=##
 e.g. use_cartoon_rendering=true
  - True - black border created around model.
  - False - No border.
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
+
 
 use_mmd_like_cartoon=##
 e.g. use_mmd_like_cartoon=True
@@ -91,15 +92,18 @@ e.g. use_mmd_like_cartoon=True
  - False - Don't Know
 I have not noticed a difference between T or F, Tell me if you do, or what an idiot I am and how obvious it really is...
 
+
 cartoon_edge_width=##
 e.g. cartoon_edge_width=0.35
  - Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border(if 'use_cartoon_rendering' is set to true)
 Use_cartoon_rendering' must me set to true otherwise this setting is useless
 
+
 cartoon_edge_step=##
 e.g. cartoon_edge_step=1.2
  - Any number
 If 'use_cartoon_rendering' is set to true, Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
+
 
 cartoon_edge_selected_color=#1#,#2#,#3#,#4#
 e.g. cartoon_edge_selected_color=1.0,0.0,0.0,1.0
@@ -110,14 +114,17 @@ e.g. cartoon_edge_selected_color=1.0,0.0,0.0,1.0
  - #4# = Unknown?
 Colour when a model is selected(Clicked on)
 
+
 rendering_rotation=0.0,0.0,0.0
  - Any number - Minimum 0.0, Highest 1.0
 Sets the angle for the camera. I think its X,Y,Z...Haven't tested yet.
+
 
 rendering_transition=0.0,0.0,0.0
 e.g. rendering_transition=0.0,0.0,0.0
  - Any number
 Sets the location of the camera: X-Higher = Move Left, Y-Higher = Move Down, Z-Higher = Move Forward
+
 
 rendering_scale=value
 e.g. rendering_scale=1.2
@@ -125,9 +132,11 @@ e.g. rendering_scale=1.2
 Scale for models/accessories/backgrounds. When an object is created the dimensions are multiplied by the value.
 NB: Do not get this confused with zoom. 
 
+
 stage_size=25.0,25.0,40.0
  - Any number
 Used to set the dimensions of the room...Hard to explain
+
 
 show_fps=value
 e.g. show_fps=false
@@ -135,15 +144,18 @@ e.g. show_fps=false
  - false
 Decides whether FPS is shown or not
 
+
 fps_position=-2.5,22.0,3.0
  - Any Number
 Sets locations of counter. Think its X,Y,Z didn't spend time on it
+
 
 window_size=value1,value2
 e.g. window_size=600,600
  - value1 - sets the width of the window
  - value2 - sets the height of the window
 Sets window size.
+
 
 top_most=value
 e.g. top_most=true
@@ -157,66 +169,81 @@ e.g. full_screen=false
  - false
 Full screen or not.
 
+
 log_size=value1,value2
 e.g log_size=80,30
  - Any number, (X-Value,Y-Value)
 How big the console log thingy is
 Must be toggled to visable via D Key
 
+
 log_position=-17.5,3.0,-20.0
  - Any Number
 Location of the log, X,Y,Z I think...
 Must be toggled to visable via D Key
+
 
 log_scale=1.0
  - any number
 Size of log Multiplied by this value.
 Must be toggled to visable via D Key
 
+
 light_direction=0.5,1.0,0.5,0.0
  - Any Numbers
 Something to do with light direction i presume... can't really be bothered to test it, Will test it later or someone can email me
 This can also be changed manual by Shift+Ctrl+ Click&Drag.
 
+
 light_intensity=0.6
  - Any Number, Highest Value=1,Lowest Value=0
 How bright the light is.
+
 
 light_color=1.0,1.0,1.0
  - Any number Between 0(lowest/None) to 1.0(Highest/full)
 Colour of the light/sun, Format is R,G,B
 
+
 campus_color=0.0,0.0,0.2
  - Any number Between 0(lowest/None) to 1.0(Highest/full)
 Colour of the Background/Void, Format is R,G,B
+
 
 max_multi_sampling=4
  - Unknown, Number perhaps?
 I have no idea, Email me if you do.
 
+
 max_multi_sampling_color=4
  - Unknown, Number perhaps?
 I have no idea, Email me if you do.
+
 
 motion_adjust_frame=0
  - Unknown, Number perhaps?
 Have no idea, Email me if you do.
 
+
 bullet_fps=120
  - Any Number, Higher Number = More fluid movement of hair/clothes
 Sets the fps for anything affected by gravity.
+
 
 rotate_step=0.08
  - Any Number, Higher = Faster, Lower = Slower
 Controls the speed at which you rotate the camera when using arrow keys.
 
+
 translate_step=0.5
  - Any Number, Higher = Faster, Lower = Slower
 Controls the speed at which you move the camera when using - Shift + Arrow Keys
 
+
 scale_step=1.05
  - Any Number, Higher = Faster, Lower = Slower
 Controls the speed at which Zoom in and out when using + and - Keys.
+
 
 use_shadow_mapping=false
  - True
@@ -224,26 +251,32 @@ use_shadow_mapping=false
 Sets whether shadows are rendered ontop of models.
 Can be toggled with the 'X' key
 
+
 shadow_mapping_texture_size=1024
  - Any Number, Higher = Darker, Lower = Lighter
 Controls how dark shadows are.
+
 
 shadow_mapping_self_density=1.0
  - Number?
 I Have no idea what this does. Email me if you do.
 
+
 shadow_mapping_floor_density=0.5
  - Number?
 I Have no idea what this does. Email me if you do.
+
 
 shadow_mapping_light_first=true
  - true?
  - false?
 I Have no idea what this does. Email me if you do.
 
+
 display_comment_frame=0.0
  - Number?
 I Have no idea what this does. Email me if you do.
+
 
 
 ## 6. Creating the Stage: .fst File
@@ -255,7 +288,7 @@ This method uses an action in the .fst file to create one wall and one floor. Th
 First see 'Adding Props/Acessories' to use .x files.
 To use a proper stage just summon it using an action in the .fst file or manually.
 
-   [++ ToDo ++]: Lighting-Camera?
+    {++ ToDo ++}: Lighting-Camera
 
 
 ## 7. Creating Movement & Expressions: .vmd Files
@@ -263,15 +296,15 @@ Movement and Expressions is created with MMD. To make sure the movement will wor
 
 Movement/Expression files are .vmd and are created & saved using MMD
 
-  [++ ToDo ++]: Rotation
+    {++ ToDo ++}: Rotation
 
 
 ## 8. Creating Voice Banks: .ojt File
 If you want to actually make your own voice bank, I'm afraid I don't know how, The program used for voice synthsizing is jTalk, So maybe you might be able to find some tutorials online or something? However you are able to manipulate the voice using the .ojt file. If you manage to create a nice sounding .ojt file post here to share(If you want to).
 
-  [++ ToDo ++]: Voice Regcognition
-  [++ ToDo ++]: Speech-Synthesis
-  [++ ToDo ++]: Music-Images MP3, Sync and Dance
+    {++ ToDo ++}: Voice Regcognition
+    {++ ToDo ++}: Speech-Synthesis
+    {++ ToDo ++}: Music-Images MP3, Sync and Dance
 
 
 ## 9. Adding your Models
@@ -279,8 +312,8 @@ Your going to want to keep all your models in a folder to keep it organized, Als
 
 I won't be listing how to create models as that does not apply to MMDAgent and I have still not found an editor in English that works! I am currently relying on the greater worldly experience and skills of colleagues on the Deviant Art forum.
 
-  [++ ToDo ++]: Plug-ins
-  [++ ToDo ++]: Others/Misc
+    {++ ToDo ++}: Plug-ins
+    {++ ToDo ++}: Others/Misc
 
 
 ## 10. Adding Props/Acessories
@@ -320,10 +353,10 @@ Useful for when you want your Agent to say your name.
 Another useful site for turning english into katakana for whatever reason you'd want, Best to do word by word.
 
 
-## 13. Credits & End
+## 13. Credits
 Thanks for reading, hope some parts are useful to you.
 Special thanks to:
-- Midget & Mole-Chan : Who started the first version of this document.
-- MMDAgents Creators : For creating MMDAgent.
-- Yu Higuchi : For creating MikuMikuDance.
+ - Midget & Mole-Chan : Who started the first version of this document.
+ - MMDAgents Creators : For creating MMDAgent.
+ - Yu Higuchi : For creating MikuMikuDance.
 
