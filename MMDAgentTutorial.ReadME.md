@@ -58,7 +58,8 @@ Recommendations (Mostly assumed...):
 - Notepad : Optional, To create the .ojt,.mdf,.fst Files.
 - EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
 
-If You do not have japanese language pack enabled you will still be able to use MMDA however you will come across many problems such as:
+If you do not have the Japanese Language Pack installed/enabled, then you will still be able to use MMDAgent, however, you will come across many problems such as:
+
 - Retarted Skin error:
 
       To fix this, use a computer with the Japanese Language Pack installed...
@@ -175,14 +176,16 @@ NB: Do not get this confused with Zoom.
 
     - Any number
 
-Used to set the dimensions of the room X, Y, Z. I think, but not sure...
+Used to set the dimensions of the stage/room as X, Y, Z. I think, but not sure...
 
 
 ### show_fps=value
-e.g. show_fps=false
- - true
- - false
-Decides whether FPS is shown or not
+
+    e.g. show_fps=false
+    - true
+    - false
+
+Decides whether FPS is shown or not.
 
 
 ### fps_position=-2.5,22.0,3.0
@@ -378,10 +381,13 @@ I Have no idea what this does. Email me if you do.
 ## 6. Creating the Stage: .fst File
 The stage can be created 2 different ways:
 
-### .fst Method
-This method uses an action in the .fst file to create one wall and one floor. The wall and floor consist of a .xpmd/bmp/png/tga.
+#### .fst Method
 
-### .pmd/x Method
+This method uses an action in the .fst file to create one wall and one floor. The wall and floor consist of images in any of the .xpmd / bmp / png / tga formats.
+
+
+#### .pmd/x Method
+
 First see 'Adding Props/Acessories' to use .x files.
 
 To use a proper stage just summon it using an action in the .fst file or manually.
