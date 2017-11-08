@@ -10,14 +10,17 @@ This application was written in Japanese and the following is some useful Englis
 
     {++ ToDo ++}: Directory names and what they are for...
 
+
 5. Creating your Agent/Avatar: .mdf File
 6. Creating the Stage: .fst File
 
     {++ ToDo ++}: Lighting-Camera
 
+
 7. Creating Movement & Expressions: .vmd File
 
     {++ ToDo ++}: Rotation
+
 
 8. Creating Voice Banks: .ojt File
 
@@ -25,10 +28,12 @@ This application was written in Japanese and the following is some useful Englis
     {++ ToDo ++}: Speech-Synthesis
     {++ ToDo ++}: Music-Images MP3, Sync and Dance
 
+
 9. Adding your Models
 
     {++ ToDo ++}: Plug-ins
     {++ ToDo ++}: Others/Misc
+
 
 10. Adding Props/Acessories
 11. How you can help
@@ -55,10 +60,8 @@ Recommendations (Mostly assumed...):
 - EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
 
 If You do not have japanese language pack enabled you will still be able to use MMDA however you will come across many problems such as:
-- Retarted Skin error:
- - To fix this, use a computer with the Japanese Language Pack installed... I think (will test on a computer with JPN Language pack installed).
-- An error saying it was unable to load textures for a model. (Should be a dark see-through black-ish box with Red Text.)
- - To fix this do either of:
+- Retarted Skin error: To fix this, use a computer with the Japanese Language Pack installed... I think (will test on a computer with JPN Language pack installed).
+- An error saying it was unable to load textures for a model. (Should be a dark see-through black-ish box with Red Text.): To fix this do either of:
 
 A. Use a computer with the Japanese Language Pack installed.
 
@@ -90,7 +93,7 @@ So, first you are going to want to open your favourite word editing program. Thi
 The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
 
 
-{use_cartoon_rendering=##}
+    {use_cartoon_rendering=##}
 
 e.g. use_cartoon_rendering=true
  - True - black border created around model.
@@ -98,7 +101,7 @@ e.g. use_cartoon_rendering=true
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
 
 
-{use_mmd_like_cartoon=##}
+    {use_mmd_like_cartoon=##}
 
 e.g. use_mmd_like_cartoon=True
  - True - Don't know
