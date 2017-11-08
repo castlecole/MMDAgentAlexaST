@@ -4,326 +4,313 @@ This application was written in Japanese and the following is some useful Englis
 
 ## Contents
 1. Introduction
+2. System Requirements
 3. How to get MMDAgent
-4. System Requirements
-5. Making Your Agent
---Creating: .mdf File #&#MDF_SET#&#
---Creating: .ojt File and Voice Banks #&#Voice#&#
---Creating: .fst File #&#Actions#&#
-----Actions: Motion #&#Act_Motion#&#
-----Actions: Rotation #&#Act_Rotate#&#
-----Actions: Music-Images #&#Act_SND_BG#&#
-----Actions: Lighting-Camera? #&#Act_Light#&#
-----Actions: Voice Regcognition #&#Act_Recog#&#
-----Actions: Speech-Synthesis #&#Act_Speech#&#
-----Actions: Variable #&#Act_Var#&#
-----Actions: Plug-ins #&#Act_Plug#&#
-----Actions: Others/Misc #&#Act_Misc#&#
-------Mashing the Events and Actions together! #&#MakeMahAgent#&#
---Creating the Stage #&#Staging#&#
---Creating Movement #&#Motions#&#
---Creating Voice Banks #&#VoiceBank#&#
---Adding your Models #&#Model#&#
---Extras/Props/Acessories #&#Props#&#
-About me & Contact Details #&#ContactMe#&#
-Useful Tips & Links #&#Tips#&#
-Credits & End #&#Credits#&#
+4. MMDAgent Avatar Structure
+-----ToDo
+5. Creating your Agent/Avatar: .mdf File
+6. Creating the Stage: .fst File
+----ToDo: Lighting-Camera?
+7. Creating Movement & Expressions: .vmd File
+----ToDo: Rotation
+8. Creating Voice Banks: .ojt File
+----ToDo: Voice Regcognition
+----ToDo: Speech-Synthesis
+----ToDo: Music-Images MP3, Sync and Dance
+9. Adding your Models
+----ToDo: Plug-ins
+----ToDo: Others/Misc
+10. Adding Props/Acessories
+11. How you can help
+12. Useful Tips & Links
+13. Credits & End
+
 
 ## 1. Introduction
 
-This has been reproduced here as lots of information found on bulletine boards, whose entries can get pulled down/deleted when members leave.
-If it seems incomplete, the chances are it is, as I am still finding more information. This is Unoffical, meaning this is by me and Not by the creators of MMDAgent.
+This has been reproduced here as lots of information found on forums, whose entries can get pulled down/deleted when members leave.
+If it seems incomplete, the chances are it is, as I am still finding more information. This is Unoffical, meaning this is Not by the creators of MMDAgent.
 
 
-## 3. How to get MMDAgent
-This guide is based on the assumption you have already downloaded the latest release of MMDAgent.(It being MMDAgent RC.)
-The latest version can be found at their homepage at
-MMDAgent Homepage
-Under "MMDAgent version" download the link labeled "Binary Package (for 32-bit Windows)".
-(Although it says 32-Bit Windows it is completely compatable with 64-bit...
-
-
-## 4. System Requirements
+## 2. System Requirements
 Well theres not really any listed So most of this is assumed...
 
-Recommended(Assumed)
-Processor : 2.00GHz
-Ram : 2GB
-Direct X : Latest recommended
-Japanese Language Pack : Optional, But HIGHLY recommended!
-MikuMikuDance : Optional, Needed if you want to make Motions
-Notepad : Optional, To create the .ojt,.mdf,.fst Files.
-EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
+Recommended(Assumed):
+- Processor : 2.00GHz
+- Ram : 2GB
+- Direct X : Latest recommended
+- Japanese Language Pack : Optional, But HIGHLY recommended!
+- MikuMikuDance : Optional, Needed if you want to make Motions
+- Notepad : Optional, To create the .ojt,.mdf,.fst Files.
+- EditPad Lite : Optional, Alternative to Notepad for people who don't/are unable to have the JPN Language pack installed.
+
 If You do not have japanese language pack enabled you will still be able to use MMDA however you will come across many problems such as:
 
-Retarted Skin, Example http://img232.images...s/i/rsfdgh.png/
+- Retarted Skin, Example http://img232.images...s/i/rsfdgh.png/
 To fix - Use a comp with Japanese Language Pack installed...I think(will test on a computer with JPN Language pack installed).[/indent]
 An error saying it was unable to load textures for a model.(Should be a dark see through black-ish box with Red Text.)
 To Fix - Either:
 A) Use a comp with Japanese Language Pack installed.
  Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
+ 
+ 
+## 3. How to get MMDAgent
+This guide is based on the assumption you have already downloaded the latest release of MMDAgent.(It being MMDAgent RC.)
+The latest version can be found at their homepage at:
+     http://www.mmdagent.jp/
+
+Under "MMDAgent version", download the link labeled "Binary Package (for 32-bit Windows)".
+(Although it says 32-Bit Windows it is completely compatable with 64-bit...)
 
 
-## 5. Making Your Agent
+## 4. MMDAgent Avatar Structure
+
+(ToDo)
+
+
+
+## 5. Creating your Agent/Avatar: .mdf File
 Alright, lets get started in making your agent! Hope your prepared (Go get a jug of coffee :)), as this is a long read!
 
+So, first you are going to want to open your favourite word editing program. This can be Notepad, Wordpad, MS Word, EditPad Lite or Notepad++. As long as you can type & save plain text, then all is good.
 
-
-## .mdf File
-So, first your going to want to open your favourite word editing program, This can be Notepad, Wordpad, MS Word, EditPad Lite or Notepad++. As long as you can type & save then its good.
-
-The .mdf basically consists of all the settings. One line for each setting. All the settings i know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values,
+The .mdf basically consists of all the settings. One line for each setting. All the settings i know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
 
 use_cartoon_rendering=##
 e.g. use_cartoon_rendering=true
-
--True - black border created around model.
--False - No border.
+--True - black border created around model.
+--False - No border.
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
 
 use_mmd_like_cartoon=##
 e.g. use_mmd_like_cartoon=True
-
 --True - Don't know
 --False - Don't Know
-## I havn't noticed a difference between T or F, Tell me if you do.
+I have not noticed a difference between T or F, Tell me if you do, or what an idiot I am and how obvious it really is...
 
 cartoon_edge_width=##
 e.g. cartoon_edge_width=0.35
-
 --Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border(if 'use_cartoon_rendering' is set to true)
-## 'use_cartoon_rendering' must me set to true otherwise this setting is useless
+Use_cartoon_rendering' must me set to true otherwise this setting is useless
 
 cartoon_edge_step=##
 e.g. cartoon_edge_step=1.2
-
 --Any number
-## If 'use_cartoon_rendering' is set to true, Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
+If 'use_cartoon_rendering' is set to true, Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
 
 cartoon_edge_selected_color=#1#,#2#,#3#,#4#
 e.g. cartoon_edge_selected_color=1.0,0.0,0.0,1.0
-
 --Any number - Minimum 0.0, Highest 1.0
 --#1# = Red
 --#2# = Green
 --#3# = Blue
 --#4# = Unknown?
-## Colour when a model is selected(Clicked on)
+Colour when a model is selected(Clicked on)
 
 rendering_rotation=0.0,0.0,0.0
-
 --Any number - Minimum 0.0, Highest 1.0
-## Sets the angle for the camera. I think its X,Y,Z...Haven't tested yet.
+Sets the angle for the camera. I think its X,Y,Z...Haven't tested yet.
 
 rendering_transition=0.0,0.0,0.0
 e.g. rendering_transition=0.0,0.0,0.0
-
 --Any number
-## Sets the location of the camera.
-## X-Higher Move Left Y-Higher Move Down Z-Higher = Move Forward
+Sets the location of the camera: X-Higher = Move Left, Y-Higher = Move Down, Z-Higher = Move Forward
 
 rendering_scale=value
-**rendering_scale=1.2
+e.g. rendering_scale=1.2
 --Any number
-## Scale for models/accessories/backgrounds. When an object is
-## created the dimensions are multiplied by the value. NOTE!!
-## Do not get this confused with zoom. 
+Scale for models/accessories/backgrounds. When an object is created the dimensions are multiplied by the value.
+NB: Do not get this confused with zoom. 
 
 stage_size=25.0,25.0,40.0
 --Any number
-## Used to set the dimensions of the room...Hard to explain
+Used to set the dimensions of the room...Hard to explain
 
 show_fps=value
-**show_fps=false
+e.g. show_fps=false
 --true
 --false
-## Duh...Decides whether FPS is shown or not
+Decides whether FPS is shown or not
 
 fps_position=-2.5,22.0,3.0
 --Any Number
-## Sets locations of counter. Think its X,Y,Z didn't spend time on it
+Sets locations of counter. Think its X,Y,Z didn't spend time on it
 
 window_size=value1,value2
-**window_size=600,600
+e.g. window_size=600,600
 --value1 - sets the width of the window
 --value2 - sets the height of the window
-## Sets window size.
+Sets window size.
 
 top_most=value
-**top_most=true
+e.g. top_most=true
 --true - Always on top, even when switching to another window
 --false - Will be covered if changed to another window/application.
-## Sets whether MMDAgent will always be on top.
+Sets whether MMDAgent will always be on top.
 
 full_screen=value
-**full_screen=false
+e.g. full_screen=false
 --true
 --false
-## Full screen or not.
+Full screen or not.
 
 log_size=value1,value2
-**log_size=80,30
+e.g log_size=80,30
+
 --Any number, (X-Value,Y-Value)
-## How big the console log thingy is
-## Must be toggled to visable via D Key
+How big the console log thingy is
+Must be toggled to visable via D Key
 
 log_position=-17.5,3.0,-20.0
 --Any Number
-## Location of the log, X,Y,Z I think...
-## Must be toggled to visable via D Key
+Location of the log, X,Y,Z I think...
+Must be toggled to visable via D Key
 
 log_scale=1.0
 --any number
-## Size of log Multiplied by this value.
-## Must be toggled to visable via D Key
+Size of log Multiplied by this value.
+Must be toggled to visable via D Key
 
 light_direction=0.5,1.0,0.5,0.0
 --Any Numbers
-## Something to do with light direction i presume... can't really
-## be bothered to test it, Will test it later or someone can email me
-## This can also be changed manual by Shift+Ctrl+ Click&Drag.
+Something to do with light direction i presume... can't really be bothered to test it, Will test it later or someone can email me
+This can also be changed manual by Shift+Ctrl+ Click&Drag.
 
 light_intensity=0.6
 --Any Number, Highest Value=1,Lowest Value=0
-## How bright the light is.
+How bright the light is.
 
 light_color=1.0,1.0,1.0
 --Any number Between 0(lowest/None) to 1.0(Highest/full)
-## Colour of the light/sun, Format is R,G,B
+Colour of the light/sun, Format is R,G,B
 
 campus_color=0.0,0.0,0.2
 --Any number Between 0(lowest/None) to 1.0(Highest/full)
-## Colour of the Background/Void, Format is R,G,B
+Colour of the Background/Void, Format is R,G,B
 
 max_multi_sampling=4
 --Unknown, Number perhaps?
-##Have no idea, Email me if you do.
+I have no idea, Email me if you do.
 
 max_multi_sampling_color=4
 --Unknown, Number perhaps?
-##Have no idea, Email me if you do.
+I have no idea, Email me if you do.
 
 motion_adjust_frame=0
 --Unknown, Number perhaps?
-##Have no idea, Email me if you do.
+Have no idea, Email me if you do.
 
 bullet_fps=120
 --Any Number, Higher Number = More fluid movement of hair/clothes
-##Sets the fps for anything affected by gravity.
+Sets the fps for anything affected by gravity.
 
 rotate_step=0.08
 --Any Number, Higher = Faster, Lower = Slower
-## Controls the speed at which you rotate the camera when using
-## arrow keys.
+Controls the speed at which you rotate the camera when using arrow keys.
 
 translate_step=0.5
 --Any Number, Higher = Faster, Lower = Slower
-## Controls the speed at which you move the camera when using
-## Shift + Arrow Keys
+Controls the speed at which you move the camera when using - Shift + Arrow Keys
 
 scale_step=1.05
 --Any Number, Higher = Faster, Lower = Slower
-## Controls the speed at which Zoom in and out when using
-## + and - Keys.
+Controls the speed at which Zoom in and out when using + and - Keys.
 
 use_shadow_mapping=false
 --True -
 --False -
-## Sets whether shadows are rendered ontop of models.
-## Can be toggled with the 'X' key
+Sets whether shadows are rendered ontop of models.
+Can be toggled with the 'X' key
 
 shadow_mapping_texture_size=1024
 --Any Number, Higher = Darker, Lower = Lighter
-## Controls how dark shadows are.
+Controls how dark shadows are.
 
 shadow_mapping_self_density=1.0
 --Number?
-##I Have no idea what this does. Email me if you do.
+I Have no idea what this does. Email me if you do.
 
 shadow_mapping_floor_density=0.5
 --Number?
-##I Have no idea what this does. Email me if you do.
+I Have no idea what this does. Email me if you do.
 
 shadow_mapping_light_first=true
 --true?
 --false?
-##I Have no idea what this does. Email me if you do.
+I Have no idea what this does. Email me if you do.
 
 display_comment_frame=0.0
 --Number?
-##I Have no idea what this does. Email me if you do.
-[/indent]
+I Have no idea what this does. Email me if you do.
 
 
-## Creating the Stage
+## 6. Creating the Stage: .fst File
 The stage can be created 2 different ways:
 .fst Method
-This method uses a action in the .fst file to create one wall and one floor. The wall and floor consist of a .xpmd/bmp/png/tga.
+This method uses an action in the .fst file to create one wall and one floor. The wall and floor consist of a .xpmd/bmp/png/tga.
 
 .pmd/x Method
 First see 'Adding Props/Acessories' to use .x files.
-To use a proper stage just summon it using a action in the fst file or manualy.
+To use a proper stage just summon it using an action in the .fst file or manually.
 
 
+## 7. Creating Movement & Expressions: .vmd Files
+Movement and Expressions is created with MMD. To make sure the movement will work for real, use the same model you plan to use to create your motions.
 
-## Creating Movement & Expressions
-Movement and Expressions is created with MMD. To make sure the movement will work for sure use the same model you plan to use to create your motions.
-
-Motion/Expression files are .vmd and are created & saved using MMD
+Movement/Expression files are .vmd and are created & saved using MMD
 
 
-## Creating Voice Banks
+## 8. Creating Voice Banks: .ojt File
 If you want to actually make your own voice bank, I'm afraid I don't know how, The program used for voice synthsizing is jTalk, So maybe you might be able to find some tutorials online or something? However you are able to manipulate the voice using the .ojt file. If you manage to create a nice sounding .ojt file post here to share(If you want to).
 
 
-## Adding your Models
+## 9. Adding your Models
 Your going to want to keep all your models in a folder to keep it organized, Also, Don't forget that certain models may need extra textures such as the miku.pmd from MMD requires a eye.bmp in the same folder. Also don't forget if the texture names are in Japanese and you don't have the Japanese language pack installed you will have problems, Scroll up to '4. System Requirements' to see what to do to fix it.
 
 I won't be listing how to create models as that does not apply to MMDAgent and I have still not found an editor in English that works! I am currently relying on the greater worldly experience and skills of colleagues on the Deviant Art forum.
 
 
-## Adding Props/Acessories
-Props and Acessories. MMDagent only(I think) accepts .pmd files as accessories, If you have an .x file that you wanna use your going to have to open up PMDeditor and open the .x file then Save it as a .pmd file. From there just use a ModelAdd event in your fst or by command to bring your accessory onto the stage. 
+## 10. Adding Props/Acessories
+Props and Acessories. MMDAgent only (I think) accepts .pmd files as accessories, If you have an .x file that you want to use, you are going to have to open up PMDeditor and open the .x file, then Save it as a .pmd file. From there just use a ModelAdd event in your .fst or by command to bring your accessory onto the stage.
 
 
-## How you can help
+## 11. How you can help
 I need help. Lots of help. This is going to be big and there is no way I can get all the skills needed to complete this project in a reasonable timeframe.
 Please feel free to send me any info i missed, so i can add to this guide, especially if you want to share the mysteries of editing PMD files :).
 
-## Useful Tips & Links
+## 12. Useful Tips & Links
 These are the real experts in MMDAgent:
 
-VPVP Wiki
+### VPVP Wiki
 The place for MMD resources, Although its in Japanese Google Translate does a good enough job and using it you should be able to navigate around the site.
 
-MMDAgent
-The homepage to this wonderful program. 
+### MMDAgent
+The homepage to this wonderful avatar program. 
 
-VocaloidOtaku
+### VocaloidOtaku
 A good forum to talk about Vocaloids and what not, Also has section for MikuMikuDance.
 
-Youtube
+### Youtube
 Youtube, if you don't know what it is...Now you do, YouTube, A Big giant Video hosting site with like what, a billion videos? You should be able to find tutorials or MMD resources on youtube. You can also find Mole-Chan on Youtube.
 
-Nico Nico Douga
+### Nico Nico Douga
 Nico Nico Douga, Pretty much the japanese version of youtube. Filled with many videos of anime/Vocaloid and other Japanese culture. Your going to need an account to watch videos(registration is free) as well as a grasp on kanji if you going to wanna use the search.
 
-EditPadPro
+### EditPadPro
 A extremely useful app for people who don't have the Japanese language pack installed. EditPadPro can open files which have messed up chars(All those fs) and convert it into proper Japanese.
 To do so after opening the files, Menu->Convert->Text encoding, Set it to 'Interpret the original Data' and set the new encoding to 'Windows 932: Japanese SHIFT-JIS'
 
-Your Name in Japanese
+### Your Name in Japanese
 Useful for when you want your Agent to say your name.
 
-Katakana to English Converter
+### Katakana to English Converter
 Another useful site for turning english into katakana for whatever reason you'd want, Best to do word by word.
 
 
-Credits & End
-Thanks for reading this probly fail guide...I'd like to thank the makers of MMDAgent for making MMDAgent
-
+## 13. Credits & End
+Thanks for reading, hope some parts are useful to you.
 Special thanks to:
-Mole-Chan : Help typed this up
-MMDAgents Creators : Creating MMDAgent
-'Coca Cola' : For your delicious taste whenever I drank you :3
-Yu Higuchi : Creating MikuMikuDance
+- Midget & Mole-Chan : The first version of this document.
+- MMDAgents Creators : Creating MMDAgent
+- Yu Higuchi : Creating MikuMikuDance
+
