@@ -98,7 +98,8 @@ The .mdf basically consists of all the settings, one line for each setting. All 
     - True - black border created around model.
     - False - No border.
 
-If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
+If enabled use 'e'(increase) or Shift+'e'(decrease) size of border.
+Size of border (If enabled) can also be set via the carton_edge_width setting below.
 
 
 ### use_mmd_like_cartoon=##
@@ -123,7 +124,8 @@ Use_cartoon_rendering' must me set to true otherwise this setting is useless
     e.g. cartoon_edge_step=1.2
     - Any number
 
-If 'use_cartoon_rendering' is set to true, Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
+If 'use_cartoon_rendering' is set to true.
+Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
 
 
 ### cartoon_edge_selected_color=#1#,#2#,#3#,#4#
