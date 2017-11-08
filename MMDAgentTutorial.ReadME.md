@@ -76,7 +76,7 @@ If you do not have the Japanese Language Pack installed/enabled, then you will s
 This guide is based on the assumption that you have already downloaded the latest release of MMDAgent. (It being MMDAgent RC.)
 The latest version can be found at their homepage at:
 
-    http://www.mmdagent.jp/
+http://www.mmdagent.jp/
 
     Under "MMDAgent version" column, download the link labeled "Binary Package (for 32-bit Windows)".
     (Although it says 32-Bit Windows, it is completely compatable with 64-bit...)
