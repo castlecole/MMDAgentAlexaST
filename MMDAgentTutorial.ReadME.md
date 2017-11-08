@@ -87,7 +87,15 @@ The latest version can be found at their homepage at:
     Under "MMDAgent version" column, download the link labeled "Binary Package (for 32-bit Windows)".
     (Although it says 32-Bit Windows, it is completely compatable with 64-bit...)
 
-There are also editing tools to support creation and maintenance of the agents, which usually refer to MMDAgent as the full program name [MikuMikuDance](https://learnmmd.com/http:/learnmmd.com/download-the-latest-version-mikumikudance/).
+There are also editing tools to support the creation and maintenance of the agents, which usually refer to MMDAgent as the full program name [MikuMikuDance](https://learnmmd.com/http:/learnmmd.com/download-the-latest-version-mikumikudance/). Here is a list of these tools and what they do:
+
+- [PME/PMX](https://learnmmd.com/http:/learnmmd.com/download-the-latest-version-mikumikudance/) - Edits the respective character file.
+- [MME](https://learnmmd.com/http:/learnmmd.com/download-the-latest-version-mikumikudance/) - Creates and manages the whole character world.
+- [Gimp](https://www.gimp.org/downloads/) - Free tool for editing the graphics.
+- [Google Translate](https://translate.google.co.uk/?hl=en&tab=wT) - Use the speach tool (icon) to convert your script into an MP3 file.
+- [Audacity](http://www.audacityteam.org/) - Use this tool to convert MP3 sound files into the required WAV format for MMDAgent.
+- [Google Sketchup]() - To create 3D Direct X image files ready for use in your models.
+- [.X Plugin for Sketchup]() - Required manual install to give Sketchup the Direct X capability.
 
 
 ## 4. MMDAgent Avatar Structure
@@ -102,6 +110,9 @@ Lets get started in making your agent. Be prepared (Go get a jug of coffee...), 
 So, first you are going to want to open your favourite word editing program. This can be Notepad, Wordpad, MS Word, EditPad Lite or Notepad++. As long as you can type & save "plain text" without any formatting, then all is good.
 
 The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values are written underneath each setting, as well as a description for each value. Replace ## with any of the possible values:
+
+There are many models, objects, stages and agents already created to choose from. This archive site [(MikuDance.info)](http://web.archive.org/web/20140517170105/http://mikudance.info/) is a good place to get hold of some complete models, or there is the Deviant Art website, although these tend to just be the agent.
+
 
 
 ### use_cartoon_rendering=##
