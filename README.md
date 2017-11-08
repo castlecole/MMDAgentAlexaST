@@ -10,5 +10,6 @@ This project is for a SmartThings interface from Alexa to SmartThings and back o
 
 Much more to follow over the coming months...... more specifically, instructions on how to make anything here actually work.
 
-In the meantime, I have started a Tutorial Readme on the basics of the MMDAgent in this folder.
+In the meantime, I have started a Tutorial Readme in this folder on the basics of the setup and use of the MMDAgent.
 
+[MMDAgentTutorial.ReadME.m]<https://github.com/castlecole/STAlexa-Avatar/blob/master/MMDAgentTutorial.ReadME.md>
