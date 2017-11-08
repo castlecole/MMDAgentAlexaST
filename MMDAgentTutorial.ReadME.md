@@ -2,6 +2,11 @@
 
 The MMDAgent application was written in Japanese and hence the following are some useful English information about how to use it.
 
+Here is a link to the extensive WiKi in Japanese, on [MMD](https://translate.googleusercontent.com/translate_c?depth=1&hl=en&rurl=translate.google.com&sl=ja&sp=nmt4&tl=en&u=https://www20.atwiki.jp/mmpp/pages/29.html&usg=ALkJrhj8LCJjYjeJSOARyn0bX-Hdw1L9Bw), which I have linked through Google Translate for you.
+
+This document is a summary of the key points.
+
+
 ## Contents
 1. Introduction
 2. System Requirements
@@ -76,10 +81,13 @@ If you do not have the Japanese Language Pack installed/enabled, then you will s
 This guide is based on the assumption that you have already downloaded the latest release of MMDAgent. (It being MMDAgent RC.)
 The latest version can be found at their homepage at:
 
-http://www.mmdagent.jp/
+   [MMDAgent Web site](http://www.mmdagent.jp/)
 
+    Instructions:
     Under "MMDAgent version" column, download the link labeled "Binary Package (for 32-bit Windows)".
     (Although it says 32-Bit Windows, it is completely compatable with 64-bit...)
+
+There are also editing tools to support creation and maintenance of the agents, which usually refer to MMDAgent as the full program name [MikuMikuDance](https://learnmmd.com/http:/learnmmd.com/download-the-latest-version-mikumikudance/).
 
 
 ## 4. MMDAgent Avatar Structure
@@ -400,11 +408,34 @@ Movement and Expressions is created with MMD. To make sure the movement will wor
 
 Movement/Expression files are .vmd and are created & saved using MMD
 
+Here are some links to Tutorials regarding the use of the MME program, a tool for editing movements and models that the MMDAgent can play.
+
+- [MMD First Steps Make your own motions from scratch](https://learnmmd.com/http:/learnmmd.com/mmd-make-your-own-motions/)
+How do I make my models move in MikuMikuDance? Why does my model move so slowly? How do I keep my model from moving until I want it to? 
+
+- [MMD Model Hair Textures Made With . . . IMVU Tutorials?!](https://learnmmd.com/http:/learnmmd.com/mmd-model-hair-textures-made-imvu-tutorials/)
+How can I make realistic hair? What should I look up for hair texture tutorials? ...read more 
+
+- [Easily Make Realistic Hair Texture for MMD Models](https://learnmmd.com/http:/learnmmd.com/make-realistic-hair-texture-mmd-models/)
+What programs can I use to create realistic hair texture for MMD Models? How can ...read more 
+
+- [Easy Fun MMD Music Video Mahlazer Motion Download "Feel the Sound"](https://learnmmd.com/http:/learnmmd.com/mmd-music-video-feel-the-sound-by-mahlazer/)
+How do I make an MMD music video? What's the easiest way to make a ...read more 
+
+- [I'd never eat your brain - The Zombie Song download links](https://learnmmd.com/http:/learnmmd.com/id-never-eat-brain-zombie-song-download-links/)
+Today I went looking through YouTube for a new MMD project to share on LearnMMD...
+
+- [Using Texture Transparency hides MMD model problem areas](https://learnmmd.com/http:/learnmmd.com/using-texture-transparency-hides-mmd-model-problem-areas/)
+How can texture transparency make my model look better? Is there a shortcut to making... 
+
+- [Position stage near MMD coordinate axis center-line](https://learnmmd.com/http:/learnmmd.com/position-stage-near-coordinate-axis-center-line/)
+How can I move the coordinate axis center-line into the part of the stage where ...read more 
+
     {++ ToDo ++}: Rotation
 
 
 ## 8. Creating Voice Banks: .ojt File
-If you want to actually make your own voice bank, I'm afraid I don't know how, The program used for voice synthsizing is jTalk, So maybe you might be able to find some tutorials online or something? However you are able to manipulate the voice using the .ojt file. If you manage to create a nice sounding .ojt file post here to share(If you want to).
+If you want to actually make your own voice bank, I'm afraid I don't know how, The program used for voice synthsizing is [jTalk](http://open-jtalk.sourceforge.net/) for Linux. However you are able to manipulate the voice using the .ojt file. If you manage to create a nice sounding .ojt file post here to share (If you want to).
 
     {++ ToDo ++}: Voice Regcognition
     {++ ToDo ++}: Speech-Synthesis
@@ -438,13 +469,13 @@ The place for MMD resources, Although its in Japanese Google Translate does a go
 The homepage to this wonderful avatar program. 
 
 #### VocaloidOtaku
-A good forum to talk about Vocaloids and what not, Also has section for MikuMikuDance.
+A good forum to talk about Vocaloids and what not. Also has a section for MikuMikuDance.
 
 #### Youtube
 Youtube, if you don't know what it is...Now you do, YouTube, A Big giant Video hosting site with like what, a billion videos? You should be able to find tutorials or MMD resources on youtube. You can also find Mole-Chan on Youtube.
 
 #### Nico Nico Douga
-Nico Nico Douga, Pretty much the japanese version of youtube. Filled with many videos of anime/Vocaloid and other Japanese culture. Your going to need an account to watch videos(registration is free) as well as a grasp on kanji if you going to wanna use the search.
+Nico Nico Douga, Pretty much the japanese version of youtube. Filled with many videos of anime/Vocaloid and other Japanese culture. Your going to need an account to watch videos (registration is free) as well as a grasp on kanji if you going to wanna use the search.
 
 #### EditPadPro
 A extremely useful app for people who don't have the Japanese language pack installed. EditPadPro can open files which have messed up chars(All those fs) and convert it into proper Japanese.
