@@ -1,4 +1,3 @@
-
 # MMDAgent Tutorial
 
 This application was written in Japanese and the following is some useful English information about how to use it.
@@ -8,19 +7,29 @@ This application was written in Japanese and the following is some useful Englis
 2. System Requirements
 3. How to get MMDAgent
 4. MMDAgent Avatar Structure
-    {++ ToDo ++}
+
+    {++ ToDo ++}: Directory names and what they are for...
+
 5. Creating your Agent/Avatar: .mdf File
 6. Creating the Stage: .fst File
-    {++ ToDo ++}: Lighting-Camera?
+
+    {++ ToDo ++}: Lighting-Camera
+
 7. Creating Movement & Expressions: .vmd File
+
     {++ ToDo ++}: Rotation
+
 8. Creating Voice Banks: .ojt File
+
     {++ ToDo ++}: Voice Regcognition
     {++ ToDo ++}: Speech-Synthesis
     {++ ToDo ++}: Music-Images MP3, Sync and Dance
+
 9. Adding your Models
+
     {++ ToDo ++}: Plug-ins
     {++ ToDo ++}: Others/Misc
+
 10. Adding Props/Acessories
 11. How you can help
 12. Useful Tips & Links
@@ -51,9 +60,11 @@ If You do not have japanese language pack enabled you will still be able to use 
 - An error saying it was unable to load textures for a model. (Should be a dark see-through black-ish box with Red Text.)
  - To fix this do either of:
 
-  A) Use a computer with the Japanese Language Pack installed.
+A. Use a computer with the Japanese Language Pack installed.
+
 Or
-  B) Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
+
+B. Open the model in PMDEditor/MikuMikuDance and change the texture names to english.
 
  
 ## 3. How to get MMDAgent
@@ -67,7 +78,7 @@ Under "MMDAgent version" column, download the link labeled "Binary Package (for 
 
 ## 4. MMDAgent Avatar Structure
 
-    {++ ToDo ++}
+    {++ ToDo ++}: Directory names and what they are for...
 
 
 
@@ -79,14 +90,16 @@ So, first you are going to want to open your favourite word editing program. Thi
 The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
 
 
-use_cartoon_rendering=##
+{use_cartoon_rendering=##}
+
 e.g. use_cartoon_rendering=true
  - True - black border created around model.
  - False - No border.
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
 
 
-use_mmd_like_cartoon=##
+{use_mmd_like_cartoon=##}
+
 e.g. use_mmd_like_cartoon=True
  - True - Don't know
  - False - Don't Know
