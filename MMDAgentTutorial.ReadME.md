@@ -8,31 +8,30 @@ This application was written in Japanese and the following is some useful Englis
 3. How to get MMDAgent
 4. MMDAgent Avatar Structure
 
-    {++ ToDo ++}: Directory names and what they are for...
-
+       {++ ToDo ++}: Directory names and what they are for...
 
 5. Creating your Agent/Avatar: .mdf File
 6. Creating the Stage: .fst File
 
-    {++ ToDo ++}: Lighting-Camera
+       {++ ToDo ++}: Lighting-Camera
 
 
 7. Creating Movement & Expressions: .vmd File
 
-    {++ ToDo ++}: Rotation
+       {++ ToDo ++}: Rotation
 
 
 8. Creating Voice Banks: .ojt File
 
-    {++ ToDo ++}: Voice Regcognition
-    {++ ToDo ++}: Speech-Synthesis
-    {++ ToDo ++}: Music-Images MP3, Sync and Dance
+       {++ ToDo ++}: Voice Regcognition
+       {++ ToDo ++}: Speech-Synthesis
+       {++ ToDo ++}: Music-Images MP3, Sync and Dance
 
 
 9. Adding your Models
 
-    {++ ToDo ++}: Plug-ins
-    {++ ToDo ++}: Others/Misc
+       {++ ToDo ++}: Plug-ins
+       {++ ToDo ++}: Others/Misc
 
 
 10. Adding Props/Acessories
@@ -93,52 +92,64 @@ So, first you are going to want to open your favourite word editing program. Thi
 The .mdf basically consists of all the settings, one line for each setting. All the settings I know are listed below. Possilble values will be written under the setting as well as a description for each value. Replace ## with any of the possible values:
 
 
-    {use_cartoon_rendering=##}
+### use_cartoon_rendering=##
 
-e.g. use_cartoon_rendering=true
- - True - black border created around model.
- - False - No border.
+    e.g. use_cartoon_rendering=true
+    - True - black border created around model.
+    - False - No border.
+
 If enabled use 'e'(increase) or Shift+'e'(decrease) size of border, Size of border(If enabled can also be set via setting below) 
 
 
-    {use_mmd_like_cartoon=##}
+### use_mmd_like_cartoon=##
 
-e.g. use_mmd_like_cartoon=True
- - True - Don't know
- - False - Don't Know
+    e.g. use_mmd_like_cartoon=True
+    - True - Don't know
+    - False - Don't Know
+
 I have not noticed a difference between T or F, Tell me if you do, or what an idiot I am and how obvious it really is...
 
 
-cartoon_edge_width=##
-e.g. cartoon_edge_width=0.35
- - Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border(if 'use_cartoon_rendering' is set to true)
+### cartoon_edge_width=##
+
+    e.g. cartoon_edge_width=0.35
+    - Any number - Minimum 0, Highest = inifinite?, Bigger Number = Bigger Border(if 'use_cartoon_rendering' is set to true)
+
 Use_cartoon_rendering' must me set to true otherwise this setting is useless
 
 
-cartoon_edge_step=##
-e.g. cartoon_edge_step=1.2
- - Any number
+### cartoon_edge_step=##
+
+    e.g. cartoon_edge_step=1.2
+    - Any number
+
 If 'use_cartoon_rendering' is set to true, Sets the amount to in/decrease 'cartoon_edge_width' when pressing 'e' and Shift+'e'
 
 
-cartoon_edge_selected_color=#1#,#2#,#3#,#4#
-e.g. cartoon_edge_selected_color=1.0,0.0,0.0,1.0
- - Any number - % of RGB colours - Minimum 0.0, Highest 1.0
- - #1# = Red
- - #2# = Green
- - #3# = Blue
- - #4# = Unknown?
+### cartoon_edge_selected_color=#1#,#2#,#3#,#4#
+
+    e.g. cartoon_edge_selected_color=1.0,0.0,0.0,1.0
+    - Any number - % of RGB colours - Minimum 0.0, Highest 1.0
+    #1# = Red
+    #2# = Green
+    #3# = Blue
+    #4# = Unknown?
+
 Colour when a model is selected(Clicked on)
 
 
-rendering_rotation=0.0,0.0,0.0
- - Any number - Minimum 0.0, Highest 1.0
+### rendering_rotation=0.0,0.0,0.0
+
+    - Any number - Minimum 0.0, Highest 1.0
+
 Sets the angle for the camera. I think its X,Y,Z...Haven't tested yet.
 
 
-rendering_transition=0.0,0.0,0.0
-e.g. rendering_transition=0.0,0.0,0.0
- - Any number
+### rendering_transition=0.0,0.0,0.0
+
+    e.g. rendering_transition=0.0,0.0,0.0
+    - Any number
+
 Sets the location of the camera: X-Higher = Move Left, Y-Higher = Move Down, Z-Higher = Move Forward
 
 
